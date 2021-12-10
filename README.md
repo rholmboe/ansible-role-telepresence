@@ -1,8 +1,8 @@
 # Ansible Role: Telepresence
 
 [![CI](https://github.com/rholmboe/ansible-role-telepresence/actions/workflows/ci.yml/badge.svg)](https://github.com/rholmboe/ansible-role-telepresence/actions/workflows/ci.yml)
-[![Ansible Role](https://img.shields.io/ansible/role/57220?logo=ansible)](https://galaxy.ansible.com/rholmboe/telepresence)
-[![Ansible Quality Score](https://img.shields.io/ansible/quality/57220?logo=ansible)](https://galaxy.ansible.com/rholmboe/telepresence)
+[![Ansible Role](https://img.shields.io/ansible/role/57223?logo=ansible)](https://galaxy.ansible.com/rholmboe/telepresence)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/57223?logo=ansible)](https://galaxy.ansible.com/rholmboe/telepresence)
 
 Installs [Telepresence](https://github.com/telepresenceio/telepresence), a Go-based local development against Kubernetes or OpenShift cluster.
 
