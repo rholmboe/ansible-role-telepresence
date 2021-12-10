@@ -1,0 +1,6 @@
+---
+telepresence_version: "2.4.9"
+telepresence_arch: "amd64"
+telepresence_bin_path: /usr/local/bin
+telepresence_user: "root"
+telepresence_group: "root"

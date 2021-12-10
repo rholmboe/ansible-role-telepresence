@@ -1,0 +1,26 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: rholmboe
+  role_name: telepresence
+  description: "Telepresence for Linux"
+  company: ""
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags:
+    - development
+    - system
+    - telepresence
+    - kubernetes
+    - openshift
