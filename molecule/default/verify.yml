@@ -21,4 +21,4 @@
 
     - assert:
         that:
-          - this_exec.stdout_lines[0] == telepresence_version
+          - telepresence_version in this_exec.stdout_lines
