@@ -4,7 +4,7 @@
   gather_facts: false
   vars:
     telepresence_bin_path: "/usr/local/bin"
-    telepresence_version: "Client: v2.4.9 (api v3)"
+    telepresence_version: "Client: v2.4.10 (api v3)"
   tasks:
     - name: Ensure Telepresence is installed.
       stat:
