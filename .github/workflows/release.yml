@@ -26,7 +26,7 @@ jobs:
           path: "rholmboe.telepresence"
 
       - name: Ansible galaxy
-        uses: robertdebock/galaxy-action@1.1.0
+        uses: robertdebock/galaxy-action@1.2.0
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
           path: "rholmboe.telepresence"
