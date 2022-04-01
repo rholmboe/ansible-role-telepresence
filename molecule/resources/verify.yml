@@ -4,21 +4,23 @@
   gather_facts: false
   vars:
     telepresence_bin_path: "/usr/local/bin"
-    telepresence_version: "Client: v2.4.10 (api v3)"
+    telepresence_version: "Client: v2.5.4 (api v3)"
   tasks:
     - name: Ensure Telepresence is installed.
-      stat:
+      ansible.builtin.stat:
         path: "{{ telepresence_bin_path }}/telepresence"
       register: this_stat
 
     - name: Get version from Telepresence.
-      command: "{{ telepresence_bin_path }}/telepresence version"
+      ansible.builtin.command: "{{ telepresence_bin_path }}/telepresence version"
       register: this_exec
 
-    - assert:
+    - name: Assert binary exists
+      ansible.builtin.assert:
         that:
           - this_stat.stat.exists
 
-    - assert:
+    - name: Assert version is correct
+      ansible.builtin.assert:
         that:
           - telepresence_version in this_exec.stdout_lines
