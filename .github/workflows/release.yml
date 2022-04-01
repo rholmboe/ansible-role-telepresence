@@ -30,3 +30,4 @@ jobs:
         with:
           galaxy_api_key: ${{ secrets.galaxy_api_key }}
           path: "rholmboe.telepresence"
+          git_branch: "main"
