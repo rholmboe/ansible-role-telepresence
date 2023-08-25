@@ -4,16 +4,16 @@
 
   pre_tasks:
     - name: Update apt cache
-      apt:
+      ansible.builtin.apt:
         update_cache: true
         cache_valid_time: 600
       when: ansible_os_family == 'Debian'
 
     - name: Install latest ca-certificates on CentOS 7 or lower
-      yum:
+      ansible.builtin.yum:
         name:
           - ca-certificates
-        state: latest
+        state: present
         update_cache: true
       when: (ansible_distribution == "CentOS" and ansible_distribution_major_version <= "7")
 
