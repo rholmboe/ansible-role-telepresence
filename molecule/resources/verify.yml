@@ -4,7 +4,7 @@
   gather_facts: false
   vars:
     telepresence_bin_path: "/usr/local/bin"
-    telepresence_version: "Client: v2.5.4 (api v3)"
+    telepresence_version: "v2.14.4"
   tasks:
     - name: Ensure Telepresence is installed.
       ansible.builtin.stat:
@@ -23,4 +23,4 @@
     - name: Assert version is correct
       ansible.builtin.assert:
         that:
-          - telepresence_version in this_exec.stdout_lines
+          - telepresence_version in this_exec.stdout

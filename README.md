@@ -17,7 +17,7 @@ None.
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
 ```
-    telepresence_version: "2.4.9"
+    telepresence_version: "2.14.4"
 ```
 
 The telepresence version to install.
